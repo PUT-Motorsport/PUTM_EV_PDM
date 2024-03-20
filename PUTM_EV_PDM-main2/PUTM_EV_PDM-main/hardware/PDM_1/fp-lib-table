@@ -2,4 +2,7 @@
   (version 7)
   (lib (name "Samacsys")(type "KiCad")(uri "${KIPRJMOD}/hardware/Samacsys.pretty")(options "")(descr ""))
   (lib (name "PESD24VF1BLYL")(type "KiCad")(uri "${KIPRJMOD}/hardware/PESD24VF1BLYL.pretty")(options "")(descr ""))
+  (lib (name "2920l")(type "KiCad")(uri "${KIPRJMOD}/hardware/LIB_2920L050_72DR/2920L050_72DR/KiCad")(options "")(descr ""))
+  (lib (name "2pin")(type "KiCad")(uri "${KIPRJMOD}/hardware/UPT-02-01-01-L-RA")(options "")(descr ""))
+  (lib (name "8pin")(type "KiCad")(uri "${KIPRJMOD}/hardware/UPT-08-03.0-01-L-V")(options "")(descr ""))
 )

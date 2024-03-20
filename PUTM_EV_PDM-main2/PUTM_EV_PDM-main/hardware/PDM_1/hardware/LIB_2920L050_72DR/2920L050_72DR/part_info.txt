@@ -1,0 +1,9 @@
+Manufacturer=LITTELFUSE
+PartNumber=2920L050/72DR
+PartCategory=Fuse
+PackageCategory=Fuses Chip
+PinCount=2
+Version=1.1
+Released=2024-01-25 05:07:46
+Downloaded=2024-03-20 20:56:06
+3D=Y

@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "2920L050_72DR"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2024-01-25-05:07:46)
+    (mountForm default
+        (footprintRef "FUSC7451X125N")
+        (spec "System")
+    )
+)
