@@ -1,4 +1,4 @@
-22470429194790395
+22473853224905712
 2pin
 SAMTEC_UPT-02-01-01-X-RA
 
@@ -54956,6 +54956,13 @@ One digit LED 7 segment SA39-11 SC39-11 SA39-12 SC39-12
 0
 10
 10
+FTSH-107-01-L-DV-K-A
+FTSH-107-XX-YYY-DV-K-A
+FTSH-107-XX-YYY-DV-K-A
+Connector
+0
+14
+14
 Ferrite_THT
 LairdTech_28C0236-0JW-10
 Ferrite, vertical, LairdTech 28C0236-0JW-10, https://assets.lairdtech.com/home/brandworld/files/28C0236-0JW-10.pdf, JW Miller core https://www.bourns.com/products/magnetic-products/j.w.-miller-through-hole-ferrite-beads-emi-filters
@@ -92567,3 +92574,10 @@ varistor
 0
 2
 2
+proper_8pin
+UPT080101LRA
+UPT-08-01-01-L-RA-2
+Connector
+0
+48
+48

@@ -1742,7 +1742,7 @@
     (property "Reference" "Dr1" (at 78.74 67.6275 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "1N5822" (at 78.74 70.1675 90)
+    (property "Value" "SS34ALH" (at 78.74 70.1675 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "Diode_SMD:D_SMA" (at 80.645 68.58 0)
