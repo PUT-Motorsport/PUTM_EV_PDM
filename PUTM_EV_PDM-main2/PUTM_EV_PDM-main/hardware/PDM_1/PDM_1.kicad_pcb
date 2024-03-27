@@ -1523,7 +1523,7 @@
 
   (footprint "proper_8pin:UPT080101LRA" (layer "F.Cu")
     (tstamp 2bc44cdf-8343-4815-957e-f9f4eeced433)
-    (at 178.5 135.77 90)
+    (at 178.5 153.965 90)
     (descr "UPT-08-01-01-L-RA-2")
     (tags "Connector")
     (property "Height" "")
@@ -3188,7 +3188,7 @@
 
   (footprint "MountingHole:MountingHole_3mm_Pad_Via" (layer "F.Cu")
     (tstamp 578773fc-b43e-4909-9c01-16b9a62a23ea)
-    (at 161.5 66)
+    (at 164 64)
     (descr "Mounting Hole 3mm")
     (tags "mounting hole 3mm")
     (attr board_only exclude_from_pos_files exclude_from_bom)
@@ -3329,7 +3329,7 @@
 
   (footprint "2pin:SAMTEC_UPT-02-01-01-X-RA" (layer "F.Cu")
     (tstamp 5b1af3fd-41d7-40e7-9d34-6de6e378d32d)
-    (at 177 151.06 90)
+    (at 177 68.94 90)
     (property "MANUFACTURER" "Samtec")
     (property "MAXIMUM_PACKAGE_HEIGHT" "9.0mm")
     (property "PARTREV" "C")
@@ -4949,7 +4949,7 @@
 
   (footprint "MountingHole:MountingHole_3mm_Pad_Via" (layer "F.Cu")
     (tstamp 838a4d0e-f261-4cfd-8acf-3ab0b87cb847)
-    (at 106.59099 155.09099)
+    (at 104 156)
     (descr "Mounting Hole 3mm")
     (tags "mounting hole 3mm")
     (attr board_only exclude_from_pos_files exclude_from_bom)
@@ -6485,7 +6485,7 @@
 
   (footprint "MountingHole:MountingHole_3mm_Pad_Via" (layer "F.Cu")
     (tstamp a80e7363-ef7e-4d32-a6b5-9acef3f9558f)
-    (at 120.5 66.31)
+    (at 104 64)
     (descr "Mounting Hole 3mm")
     (tags "mounting hole 3mm")
     (attr board_only exclude_from_pos_files exclude_from_bom)
@@ -8829,7 +8829,7 @@
 
   (footprint "proper_8pin:UPT080101LRA" (layer "F.Cu")
     (tstamp f03a3be3-0d89-4ac4-bb42-f6d054f3a3ee)
-    (at 178.5 94.705 90)
+    (at 178.5 112.905 90)
     (descr "UPT-08-01-01-L-RA-2")
     (tags "Connector")
     (property "Height" "")
