@@ -6,4 +6,5 @@
   (lib (name "2920l")(type "KiCad")(uri "${KIPRJMOD}/hardware/LIB_2920L050_72DR/2920L050_72DR/KiCad/2920L050_72DR.kicad_sym")(options "")(descr ""))
   (lib (name "FTSH-107-01-L-DV-K-A")(type "KiCad")(uri "${KIPRJMOD}/hardware/FTSH-107-01-L-DV-K-A/FTSH-107-01-L-DV-K-A.kicad_sym")(options "")(descr ""))
   (lib (name "8pin_good")(type "KiCad")(uri "${KIPRJMOD}/hardware/proper_8pin/UPT-08-01-01-L-RA.kicad_sym")(options "")(descr ""))
+  (lib (name "7447786147")(type "KiCad")(uri "${KIPRJMOD}/hardware/inductor6_3/7447786147.kicad_sym")(options "")(descr ""))
 )

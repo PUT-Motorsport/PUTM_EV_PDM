@@ -7,4 +7,5 @@
   (lib (name "8pin")(type "KiCad")(uri "${KIPRJMOD}/hardware/UPT-08-03.0-01-L-V")(options "")(descr ""))
   (lib (name "FTSH-107-01-L-DV-K-A")(type "KiCad")(uri "${KIPRJMOD}/hardware/FTSH-107-01-L-DV-K-A")(options "")(descr ""))
   (lib (name "proper_8pin")(type "KiCad")(uri "${KIPRJMOD}/hardware/proper_8pin")(options "")(descr ""))
+  (lib (name "inductor6_3")(type "KiCad")(uri "${KIPRJMOD}/hardware/inductor6_3")(options "")(descr ""))
 )
