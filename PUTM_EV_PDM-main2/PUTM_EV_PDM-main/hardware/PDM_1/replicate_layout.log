@@ -1,75 +1,25 @@
-04-02 11:40:04 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 392:Plugin executed on: 'win32'
-04-02 11:40:04 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 393:Plugin executed with python version: '3.9.16 (main, Oct 13 2023, 05:50:11) [MSC v.1936 64 bit (AMD64)]'
-04-02 11:40:04 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 394:KiCad build version: 7.0.9
-04-02 11:40:04 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 395:Plugin version: 2.1.3
-04-02 11:40:04 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 396:Frame repr: <wx._core.Frame object at 0x000002C6E92E5AF0>
-04-02 11:40:04 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 420:Preparing replicator with IC4 as a reference
-04-02 11:40:04 com_github_MitjaNemec_ReplicateLayout.replicate_layout 117:getting a list of all footprints on board
-04-02 11:40:04 com_github_MitjaNemec_ReplicateLayout.replicate_layout 136:Footprint REF** does not have Sheetfile property, it will not be replicated. Most likely it is only in layout
-04-02 11:40:04 com_github_MitjaNemec_ReplicateLayout.replicate_layout 136:Footprint REF** does not have Sheetfile property, it will not be replicated. Most likely it is only in layout
-04-02 11:40:04 com_github_MitjaNemec_ReplicateLayout.replicate_layout 136:Footprint REF** does not have Sheetfile property, it will not be replicated. Most likely it is only in layout
-04-02 11:40:04 com_github_MitjaNemec_ReplicateLayout.replicate_layout 136:Footprint REF** does not have Sheetfile property, it will not be replicated. Most likely it is only in layout
-04-02 11:40:04 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 468:source anchor footprint is 'IC4'
+04-08 19:28:48 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 392:Plugin executed on: 'win32'
+04-08 19:28:48 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 393:Plugin executed with python version: '3.9.16 (main, Oct 13 2023, 05:50:11) [MSC v.1936 64 bit (AMD64)]'
+04-08 19:28:48 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 394:KiCad build version: 7.0.9
+04-08 19:28:48 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 395:Plugin version: 2.1.3
+04-08 19:28:48 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 396:Frame repr: <wx._core.Frame object at 0x0000027AF1C40430>
+04-08 19:28:48 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 420:Preparing replicator with C49 as a reference
+04-08 19:28:48 com_github_MitjaNemec_ReplicateLayout.replicate_layout 117:getting a list of all footprints on board
+04-08 19:28:48 com_github_MitjaNemec_ReplicateLayout.replicate_layout 136:Footprint REF** does not have Sheetfile property, it will not be replicated. Most likely it is only in layout
+04-08 19:28:48 com_github_MitjaNemec_ReplicateLayout.replicate_layout 136:Footprint REF** does not have Sheetfile property, it will not be replicated. Most likely it is only in layout
+04-08 19:28:48 com_github_MitjaNemec_ReplicateLayout.replicate_layout 136:Footprint REF** does not have Sheetfile property, it will not be replicated. Most likely it is only in layout
+04-08 19:28:48 com_github_MitjaNemec_ReplicateLayout.replicate_layout 136:Footprint REF** does not have Sheetfile property, it will not be replicated. Most likely it is only in layout
+04-08 19:28:48 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 468:source anchor footprint is 'C49'
 Located on: ['battery connection', 'IC_3']
 With filenames: ['C:\\Users\\kacpe\\OneDrive\\Pulpit\\github\\PUTM_EV_PDM\\PUTM_EV_PDM-main2\\PUTM_EV_PDM-main\\hardware\\PDM_1\\battery_connection.kicad_sch', 'C:\\Users\\kacpe\\OneDrive\\Pulpit\\github\\PUTM_EV_PDM\\PUTM_EV_PDM-main2\\PUTM_EV_PDM-main\\hardware\\PDM_1\\IC.kicad_sch']
 With sheet_id:['battery connection', 'IC_3']
-04-02 11:40:04 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 475:Corresponding footprints are 
-[('IC4', ['battery connection', 'IC_3']), ('IC3', ['battery connection', 'IC_2']), ('IC5', ['battery connection', 'IC_4']), ('IC2', ['battery connection', 'IC_1'])]
-04-02 11:40:04 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 487:Showing dialog
-04-02 11:40:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 424:constructing a list of sheets suitable for replication on level:'IC_3', file:'C:\\Users\\kacpe\\OneDrive\\Pulpit\\github\\PUTM_EV_PDM\\PUTM_EV_PDM-main2\\PUTM_EV_PDM-main\\hardware\\PDM_1\\IC.kicad_sch'
-04-02 11:40:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 461:suitable sheets are:[['battery connection', 'IC_1'], ['battery connection', 'IC_2'], ['battery connection', 'IC_4']]
-04-02 11:40:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1464:Level selected: ['battery connection', 'IC_3']
-04-02 11:40:05 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1299:Filtering list of tracks
-04-02 11:40:05 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 493:Toolbar position: wx.Point(4441, -90)
-04-02 11:40:05 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 498:Dialog position: wx.Point(4002, -90)
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 424:constructing a list of sheets suitable for replication on level:'IC_3', file:'C:\\Users\\kacpe\\OneDrive\\Pulpit\\github\\PUTM_EV_PDM\\PUTM_EV_PDM-main2\\PUTM_EV_PDM-main\\hardware\\PDM_1\\IC.kicad_sch'
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 461:suitable sheets are:[['battery connection', 'IC_1'], ['battery connection', 'IC_2'], ['battery connection', 'IC_4']]
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 240:Replicating layout
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 240:Starting replication of sheets: [['battery connection', 'IC_1'], ['battery connection', 'IC_2'], ['battery connection', 'IC_4']]
-on level: ['battery connection', 'IC_3']
-with tracks=True, zone=True, text=True, text=True, intersecting=False, remove=False, locked footprints=False, group_only=False
-04-02 11:40:13 root 332:updating GUI message: 'Preparing for replication'
-04-02 11:40:13 root 337:updating GUI with: 0
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 310:Getting the list of source footprints
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 320:Getting the list of all the remaining footprints
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 327:Getting source tracks
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1299:Filtering list of tracks
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 331:Getting source zones
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 335:Getting source text items
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 339:Getting source drawing items
-04-02 11:40:13 root 332:updating GUI message: 'Replicating footprints'
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 806:Replicating footprints
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 813:Replicating footprints on sheet ['battery connection', 'IC_1']
-04-02 11:40:13 root 337:updating GUI with: 2
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 813:Replicating footprints on sheet ['battery connection', 'IC_2']
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 813:Replicating footprints on sheet ['battery connection', 'IC_4']
-04-02 11:40:13 root 337:updating GUI with: 73
-04-02 11:40:13 root 332:updating GUI message: 'Replicating tracks'
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 977:Replicating tracks
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 983:Replicating tracks on sheet ['battery connection', 'IC_1']
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['battery connection', 'IC_1'] :[('OUT3_0', 'OUT1_0'), ('/battery connection/IC_3/IN1', '/battery connection/IC_1/IN1'), ('Net-(D10-K)', 'Net-(D8-K)'), ('Net-(IC4-SCLK)', 'Net-(IC2-SCLK)'), ('/battery connection/IC_2/MISO', '/SPI1_MOSI'), ('/battery connection/IC_3/IN0', '/battery connection/IC_1/IN0'), ('Net-(IC4-SO)', 'Net-(IC2-SO)'), ('Net-(IC4-GND_1)', 'Net-(IC2-GND_1)'), ('Net-(IC4-IS)', 'Net-(IC2-IS)'), ('OUT3_1', 'OUT1_1'), ('/battery connection/IC_3/MISO', '/battery connection/IC_1/MISO'), ('Net-(IC4-VDD)', 'Net-(IC2-VDD)'), ('Net-(IC4-LHI)', 'Net-(IC2-LHI)'), ('/battery connection/IC_3/IN2', '/battery connection/IC_1/IN2'), ('+3.3V', '+3.3V'), ('+BATT', '+BATT'), ('/battery connection/IC_3/IN3', '/battery connection/IC_1/IN3'), ('/SPI1_NSS', '/SPI1_NSS'), ('/FUSE3_IS', '/FUSE1_IS'), ('OUT3_2', 'OUT1_2'), ('/SPI1_SCK', '/SPI1_SCK'), ('Net-(IC4-CSN)', 'Net-(IC2-CSN)'), ('/LHI_3', '/LHI_1'), ('GND', 'GND'), ('OUT3_3', 'OUT1_3'), ('Net-(IC4-SI)', 'Net-(IC2-SI)')]
-04-02 11:40:13 root 337:updating GUI with: 33
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 983:Replicating tracks on sheet ['battery connection', 'IC_2']
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['battery connection', 'IC_2'] :[('Net-(IC4-VDD)', 'Net-(IC3-VDD)'), ('Net-(IC4-LHI)', 'Net-(IC3-LHI)'), ('Net-(IC4-CSN)', 'Net-(IC3-CSN)'), ('OUT3_3', 'OUT2_3'), ('/battery connection/IC_3/IN3', '/battery connection/IC_2/IN3'), ('Net-(IC4-SI)', 'Net-(IC3-SI)'), ('+3.3V', '+3.3V'), ('/battery connection/IC_2/MISO', '/battery connection/IC_1/MISO'), ('Net-(D10-K)', 'Net-(D9-K)'), ('/FUSE3_IS', '/FUSE2_IS'), ('/battery connection/IC_3/IN0', '/battery connection/IC_2/IN0'), ('+BATT', '+BATT'), ('OUT3_0', 'OUT2_0'), ('Net-(IC4-SCLK)', 'Net-(IC3-SCLK)'), ('/SPI1_NSS', '/SPI1_NSS'), ('/battery connection/IC_3/IN1', '/battery connection/IC_2/IN1'), ('/battery connection/IC_3/IN2', '/battery connection/IC_2/IN2'), ('/SPI1_SCK', '/SPI1_SCK'), ('Net-(IC4-IS)', 'Net-(IC3-IS)'), ('Net-(IC4-GND_1)', 'Net-(IC3-GND_1)'), ('/battery connection/IC_3/MISO', '/battery connection/IC_2/MISO'), ('/LHI_3', '/LHI_2'), ('OUT3_1', 'OUT2_1'), ('OUT3_2', 'OUT2_2'), ('GND', 'GND'), ('Net-(IC4-SO)', 'Net-(IC3-SO)')]
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 983:Replicating tracks on sheet ['battery connection', 'IC_4']
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['battery connection', 'IC_4'] :[('/battery connection/IC_3/MISO', '/SPI1_MISO'), ('OUT3_2', 'OUT4_2'), ('/battery connection/IC_3/IN2', '/battery connection/IC_4/IN2'), ('Net-(IC4-SCLK)', 'Net-(IC5-SCLK)'), ('Net-(IC4-LHI)', 'Net-(IC5-LHI)'), ('/battery connection/IC_3/IN1', '/battery connection/IC_4/IN1'), ('/battery connection/IC_3/IN3', '/battery connection/IC_4/IN3'), ('/battery connection/IC_2/MISO', '/battery connection/IC_3/MISO'), ('OUT3_1', 'OUT4_1'), ('+3.3V', '+3.3V'), ('Net-(IC4-CSN)', 'Net-(IC5-CSN)'), ('OUT3_3', 'OUT4_3'), ('+BATT', '+BATT'), ('Net-(IC4-GND_1)', 'Net-(IC5-GND_1)'), ('/LHI_3', '/LHI_4'), ('Net-(D10-K)', 'Net-(D11-K)'), ('/SPI1_NSS', '/SPI1_NSS'), ('Net-(IC4-IS)', 'Net-(IC5-IS)'), ('Net-(IC4-SI)', 'Net-(IC5-SI)'), ('/SPI1_SCK', '/SPI1_SCK'), ('/battery connection/IC_3/IN0', '/battery connection/IC_4/IN0'), ('/FUSE3_IS', '/FUSE4_IS'), ('OUT3_0', 'OUT4_0'), ('Net-(IC4-SO)', 'Net-(IC5-SO)'), ('GND', 'GND'), ('Net-(IC4-VDD)', 'Net-(IC5-VDD)')]
-04-02 11:40:13 root 332:updating GUI message: 'Replicating zones'
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1047:Replicating zones
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1054:Replicating zones on sheet ['battery connection', 'IC_1']
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['battery connection', 'IC_1'] :[('OUT3_0', 'OUT1_0'), ('/battery connection/IC_3/IN1', '/battery connection/IC_1/IN1'), ('Net-(D10-K)', 'Net-(D8-K)'), ('Net-(IC4-SCLK)', 'Net-(IC2-SCLK)'), ('/battery connection/IC_2/MISO', '/SPI1_MOSI'), ('/battery connection/IC_3/IN0', '/battery connection/IC_1/IN0'), ('Net-(IC4-SO)', 'Net-(IC2-SO)'), ('Net-(IC4-GND_1)', 'Net-(IC2-GND_1)'), ('Net-(IC4-IS)', 'Net-(IC2-IS)'), ('OUT3_1', 'OUT1_1'), ('/battery connection/IC_3/MISO', '/battery connection/IC_1/MISO'), ('Net-(IC4-VDD)', 'Net-(IC2-VDD)'), ('Net-(IC4-LHI)', 'Net-(IC2-LHI)'), ('/battery connection/IC_3/IN2', '/battery connection/IC_1/IN2'), ('+3.3V', '+3.3V'), ('+BATT', '+BATT'), ('/battery connection/IC_3/IN3', '/battery connection/IC_1/IN3'), ('/SPI1_NSS', '/SPI1_NSS'), ('/FUSE3_IS', '/FUSE1_IS'), ('OUT3_2', 'OUT1_2'), ('/SPI1_SCK', '/SPI1_SCK'), ('Net-(IC4-CSN)', 'Net-(IC2-CSN)'), ('/LHI_3', '/LHI_1'), ('GND', 'GND'), ('OUT3_3', 'OUT1_3'), ('Net-(IC4-SI)', 'Net-(IC2-SI)')]
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1054:Replicating zones on sheet ['battery connection', 'IC_2']
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['battery connection', 'IC_2'] :[('Net-(IC4-VDD)', 'Net-(IC3-VDD)'), ('Net-(IC4-LHI)', 'Net-(IC3-LHI)'), ('Net-(IC4-CSN)', 'Net-(IC3-CSN)'), ('OUT3_3', 'OUT2_3'), ('/battery connection/IC_3/IN3', '/battery connection/IC_2/IN3'), ('Net-(IC4-SI)', 'Net-(IC3-SI)'), ('+3.3V', '+3.3V'), ('/battery connection/IC_2/MISO', '/battery connection/IC_1/MISO'), ('Net-(D10-K)', 'Net-(D9-K)'), ('/FUSE3_IS', '/FUSE2_IS'), ('/battery connection/IC_3/IN0', '/battery connection/IC_2/IN0'), ('+BATT', '+BATT'), ('OUT3_0', 'OUT2_0'), ('Net-(IC4-SCLK)', 'Net-(IC3-SCLK)'), ('/SPI1_NSS', '/SPI1_NSS'), ('/battery connection/IC_3/IN1', '/battery connection/IC_2/IN1'), ('/battery connection/IC_3/IN2', '/battery connection/IC_2/IN2'), ('/SPI1_SCK', '/SPI1_SCK'), ('Net-(IC4-IS)', 'Net-(IC3-IS)'), ('Net-(IC4-GND_1)', 'Net-(IC3-GND_1)'), ('/battery connection/IC_3/MISO', '/battery connection/IC_2/MISO'), ('/LHI_3', '/LHI_2'), ('OUT3_1', 'OUT2_1'), ('OUT3_2', 'OUT2_2'), ('GND', 'GND'), ('Net-(IC4-SO)', 'Net-(IC3-SO)')]
-04-02 11:40:13 root 337:updating GUI with: 66
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1054:Replicating zones on sheet ['battery connection', 'IC_4']
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['battery connection', 'IC_4'] :[('/battery connection/IC_3/MISO', '/SPI1_MISO'), ('OUT3_2', 'OUT4_2'), ('/battery connection/IC_3/IN2', '/battery connection/IC_4/IN2'), ('Net-(IC4-SCLK)', 'Net-(IC5-SCLK)'), ('Net-(IC4-LHI)', 'Net-(IC5-LHI)'), ('/battery connection/IC_3/IN1', '/battery connection/IC_4/IN1'), ('/battery connection/IC_3/IN3', '/battery connection/IC_4/IN3'), ('/battery connection/IC_2/MISO', '/battery connection/IC_3/MISO'), ('OUT3_1', 'OUT4_1'), ('+3.3V', '+3.3V'), ('Net-(IC4-CSN)', 'Net-(IC5-CSN)'), ('OUT3_3', 'OUT4_3'), ('+BATT', '+BATT'), ('Net-(IC4-GND_1)', 'Net-(IC5-GND_1)'), ('/LHI_3', '/LHI_4'), ('Net-(D10-K)', 'Net-(D11-K)'), ('/SPI1_NSS', '/SPI1_NSS'), ('Net-(IC4-IS)', 'Net-(IC5-IS)'), ('Net-(IC4-SI)', 'Net-(IC5-SI)'), ('/SPI1_SCK', '/SPI1_SCK'), ('/battery connection/IC_3/IN0', '/battery connection/IC_4/IN0'), ('/FUSE3_IS', '/FUSE4_IS'), ('OUT3_0', 'OUT4_0'), ('Net-(IC4-SO)', 'Net-(IC5-SO)'), ('GND', 'GND'), ('Net-(IC4-VDD)', 'Net-(IC5-VDD)')]
-04-02 11:40:13 root 332:updating GUI message: 'Replicating text'
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1136:Replicating text
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1143:Replicating text on sheet ['battery connection', 'IC_1']
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1143:Replicating text on sheet ['battery connection', 'IC_2']
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1143:Replicating text on sheet ['battery connection', 'IC_4']
-04-02 11:40:13 root 332:updating GUI message: 'Replicating drawings'
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1187:Replicating drawings
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1193:Replicating drawings on sheet ['battery connection', 'IC_1']
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1193:Replicating drawings on sheet ['battery connection', 'IC_2']
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1193:Replicating drawings on sheet ['battery connection', 'IC_4']
-04-02 11:40:13 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 256:Replication complete
+04-08 19:28:48 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 475:Corresponding footprints are 
+[('C57', ['battery connection', 'IC_4']), ('C41', ['battery connection', 'IC_2']), ('C33', ['battery connection', 'IC_1']), ('C49', ['battery connection', 'IC_3'])]
+04-08 19:28:48 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 487:Showing dialog
+04-08 19:28:48 com_github_MitjaNemec_ReplicateLayout.replicate_layout 424:constructing a list of sheets suitable for replication on level:'IC_3', file:'C:\\Users\\kacpe\\OneDrive\\Pulpit\\github\\PUTM_EV_PDM\\PUTM_EV_PDM-main2\\PUTM_EV_PDM-main\\hardware\\PDM_1\\IC.kicad_sch'
+04-08 19:28:48 com_github_MitjaNemec_ReplicateLayout.replicate_layout 461:suitable sheets are:[['battery connection', 'IC_1'], ['battery connection', 'IC_2'], ['battery connection', 'IC_4']]
+04-08 19:28:49 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1464:Level selected: ['battery connection', 'IC_3']
+04-08 19:28:49 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1299:Filtering list of tracks
+04-08 19:28:49 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 493:Toolbar position: wx.Point(1609, 117)
+04-08 19:28:49 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 498:Dialog position: wx.Point(1170, 117)
+04-08 19:28:55 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 321:User canceled the dialog
