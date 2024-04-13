@@ -2424,7 +2424,7 @@
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 54c663dc-24d7-4390-81bb-64b0fda1b023)
   )
-  (hierarchical_label "MISO" (shape input) (at 116.84 76.2 180) (fields_autoplaced)
+  (hierarchical_label "MISO" (shape output) (at 116.84 76.2 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 82f43333-5b3f-4fe1-88eb-97f68a6b9293)
   )

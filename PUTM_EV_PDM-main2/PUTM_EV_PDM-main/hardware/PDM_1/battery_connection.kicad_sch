@@ -464,6 +464,19 @@
     (uuid e236ea31-9c17-4b13-8a3c-216547692ba6)
   )
 
+  (label "MISO_1" (at 93.98 93.98 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 36e2feae-01bd-42e6-ad0f-9e72f350c724)
+  )
+  (label "MISO_2" (at 140.97 93.98 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 6e01ddae-a097-43d4-871b-ffdd387f7a3f)
+  )
+  (label "MISO_3" (at 184.15 93.98 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid fd0fce55-8d90-41bb-826e-f6e6236212e9)
+  )
+
   (global_label "OUT2_2" (shape output) (at 134.62 107.95 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 1677342c-8dd7-4be5-99ec-8a2cdd32014f)
@@ -627,7 +640,7 @@
   )
 
   (symbol (lib_id "Device:D_TVS") (at 43.18 83.82 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board no) (dnp yes) (fields_autoplaced)
     (uuid 46046a7a-8b2d-4fb1-be9c-25524d25e509)
     (property "Reference" "D6" (at 45.72 82.55 90)
       (effects (font (size 1.27 1.27)) (justify right))
