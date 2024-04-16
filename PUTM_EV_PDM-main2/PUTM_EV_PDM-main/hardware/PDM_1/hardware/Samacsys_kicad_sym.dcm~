@@ -1,8 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP CLF7045NIT-680M-D
-D SMD / SMT Inductors (Coils), L=68?H, L x W x T :
-K
-F https://product.tdk.com/system/files/dam/doc/product/inductor/inductor/smd/catalog/inductor_automotive_power_clf7045ni-d_en.pdf
-$ENDCMP
-#End Doc Library
