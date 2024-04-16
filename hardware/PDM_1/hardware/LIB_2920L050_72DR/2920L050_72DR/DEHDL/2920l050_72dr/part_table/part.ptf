@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '2920L050_72DR'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "LITTELFUSE", "2920L050/72DR" (!) = "", "FUSC7451X125N", "Fuses Chip", "576-2920L050/72DR", "https://www.mouser.co.uk/ProductDetail/Littelfuse/2920L050-72DR?qs=ST9lo4GX8V0DAh6PAk7A0Q%3D%3D", "Resettable Fuses - PPTC PTC 72V POLYFUSE SURF MOUNT 2920 0.50A", "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=f237e8c2-1ed9-4c13-a738-dbe0738b3d2c&filename=2920l-datasheet-update", "1.25 mm"
+END_PART
+
+END.

@@ -1,0 +1,66 @@
+(Japanese_coding: sjis)
+(function "ECS_18941905"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2024-01-25-05:07:46)
+    (utime 2024-01-25-05:07:46)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "2920L050_72DR")
+)
+
+
+(pinAssign "ECS_18941905"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2024-01-25-05:07:46)
+    (utime 2024-01-25-05:07:46)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_18941905")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "2920L050_72DR")
+)
+
+
+(part "2920L050_72DR"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2024-01-25-05:07:46)
+    (utime 2024-01-25-05:07:46)
+    (packageRef "2920L050_72DR")
+    (pinAssignRef "ECS_18941905")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "YES")
+    (property "refDesPrefix" "F")
+    (property "description" "Resettable Fuses - PPTC PTC 72V POLYFUSE SURF MOUNT 2920 0.50A")
+    (property "Mouser_Part_Number" "576-2920L050/72DR")
+    (property "Mouser_Price/Stock" "https://www.mouser.co.uk/ProductDetail/Littelfuse/2920L050-72DR?qs=ST9lo4GX8V0DAh6PAk7A0Q%3D%3D")
+    (property "Manufacturer_Name" "LITTELFUSE")
+    (property "Manufacturer_Part_Number" "2920L050/72DR")
+    (property "Datasheet_Link" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=f237e8c2-1ed9-4c13-a738-dbe0738b3d2c&filename=2920l-datasheet-update")
+    (property "compAreaTopHeight" 1.25)
+)
+
+
