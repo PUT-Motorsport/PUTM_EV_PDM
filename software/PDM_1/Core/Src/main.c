@@ -33,15 +33,31 @@
 /* USER CODE BEGIN PD */
 #define ADC_BUF_SIZE 4
 #define __VREFANALOG_VOLTAGE__ 3300
-#define OUT_READY 0x8F // 1000 1111
-#define DCR_ACTIVE 0xFD // 1111 1101
-#define DCR_ACTIVE1 0xF5 // 1111 0101
+#define OUT_READY 0x9F // 1000 1111
+#define OUT_READY1 0x9F // 1000 1111
+#define DCR_ACTIVE 0xF5 // 1111 0101
 #define DCR_SLEEP 0xFF // 1111 1111
 #define DCR_CHANNEL0 0xF8 // 1111 1000
 #define DCR_CHANNEL1 0xF9 // 1111 1001
 #define DCR_CHANNEL2 0xFA // 1111 1010
 #define DCR_CHANNEL3 0xFB // 1111 1011
+// Diagnosis Registers - Read Commands
 #define WRNDIAG 0x01// 0000 0001
+#define STDDIAG 0x02// 0000 0010
+#define ERRDIAG 0x03// 0000 0011
+// Configuration Registers - Read Commands
+#define OUT_READ 0x00 // 0000 0000
+#define RCS_READ 0x08 // 0000 1000
+#define SRC_READ 0x09 // 0000 1001
+#define OCR_READ 0x04 // 0000 0100
+#define RCD_READ 0x0A // 0000 1100
+#define KRC_READ 0x05 // 0000 0101
+#define PCS_READ 0x0B // 0000 1101
+#define HWCR_READ 0x05 // 0000 0110
+#define ICS_READ 0x0B // 0000 1110
+#define DCR_READ 0x07 // 0000 0111
+
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -62,12 +78,13 @@ uint16_t adc_buffer[ADC_BUF_SIZE];
 uint8_t adc_ready = 0;
 
 uint8_t tx_buffer[5];
-uint8_t rx_buffer[5 * 4];
+uint8_t rx_buffer[5 * 5];
 
 uint32_t fuse1_is;
 uint32_t fuse2_is;
 uint32_t fuse3_is;
 uint32_t fuse4_is;
+int status_csn=2;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -121,59 +138,61 @@ int main(void)
   MX_SPI1_Init();
   MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
+  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_2, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_3, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, GPIO_PIN_RESET);
   //HAL_SPI_TransmitReceive(&hspi1, tx_buffer, rx_buffer, 10, 100);
   // sleep -> ready
   tx_buffer[0] = OUT_READY;
   tx_buffer[1] = OUT_READY;
   tx_buffer[2] = OUT_READY;
   tx_buffer[3] = OUT_READY;
-
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET);
   error[0] = HAL_SPI_TransmitReceive(&hspi1, tx_buffer, rx_buffer + 0, 5, 100);
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET);
   // ready -> active
   tx_buffer[0] = DCR_ACTIVE;
   tx_buffer[1] = DCR_ACTIVE;
   tx_buffer[2] = DCR_ACTIVE;
   tx_buffer[3] = DCR_ACTIVE;
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET);
   error[1] = HAL_SPI_TransmitReceive(&hspi1, tx_buffer, rx_buffer + 5, 5, 100);
-
-  tx_buffer[0]=WRNDIAG;
-  tx_buffer[1]=WRNDIAG;
-  tx_buffer[2]=WRNDIAG;
-  tx_buffer[3]=WRNDIAG;
-  tx_buffer[4]=WRNDIAG;
-
-error[2]=HAL_SPI_TransmitReceive(&hspi1, tx_buffer, rx_buffer+10, 5, 100);
-
-// select channel 0
- tx_buffer[0] = DCR_CHANNEL0;
- tx_buffer[1] = DCR_CHANNEL0;
- tx_buffer[2] = DCR_CHANNEL0;
- tx_buffer[3] = DCR_CHANNEL0;
- error[3] = HAL_SPI_TransmitReceive(&hspi1, tx_buffer, rx_buffer + 15, 5, 100);
-
- // select channel 0
-  tx_buffer[0] = DCR_CHANNEL1;
-  tx_buffer[1] = DCR_CHANNEL1;
-  tx_buffer[2] = DCR_CHANNEL1;
-  tx_buffer[3] = DCR_CHANNEL1;
-  error[3] = HAL_SPI_TransmitReceive(&hspi1, tx_buffer, rx_buffer + 15, 5, 100);
-
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET);
   // select channel 0
-   tx_buffer[0] = DCR_CHANNEL2;
-   tx_buffer[1] = DCR_CHANNEL2;
-   tx_buffer[2] = DCR_CHANNEL2;
-   tx_buffer[3] = DCR_CHANNEL2;
-   error[3] = HAL_SPI_TransmitReceive(&hspi1, tx_buffer, rx_buffer + 15, 5, 100);
+  tx_buffer[0] = OUT_READY;
+  tx_buffer[1] = OUT_READY;
+  tx_buffer[2] = OUT_READY;
+  tx_buffer[3] = OUT_READY;
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET);
+  error[2] = HAL_SPI_TransmitReceive(&hspi1, tx_buffer, rx_buffer + 10, 5, 100);
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET);
+  // status
+  tx_buffer[0] = DCR_CHANNEL0;
+  tx_buffer[1] = DCR_CHANNEL0;
+  tx_buffer[2] = DCR_CHANNEL0;
+  tx_buffer[3] = DCR_CHANNEL0;
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET);
+  error[3] = HAL_SPI_TransmitReceive(&hspi1, tx_buffer, rx_buffer + 15, 5, 100);
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET);
 
-   // select channel 0
-    tx_buffer[0] = DCR_CHANNEL3;
-    tx_buffer[1] = DCR_CHANNEL3;
-    tx_buffer[2] = DCR_CHANNEL3;
-    tx_buffer[3] = DCR_CHANNEL3;
-    error[3] = HAL_SPI_TransmitReceive(&hspi1, tx_buffer, rx_buffer + 15, 5, 100);
+  // out read
+    tx_buffer[0] = DCR_READ;
+    tx_buffer[1] = DCR_READ;
+    tx_buffer[2] = DCR_READ;
+    tx_buffer[3] = DCR_READ;
+    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET);
+    error[4] = HAL_SPI_TransmitReceive(&hspi1, tx_buffer, rx_buffer + 20, 5, 100);
+    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET);
+  // status dcr read
+//  tx_buffer[0] = OCR_READ;
+//  tx_buffer[1] = OCR_READ;
+//  tx_buffer[2] = OCR_READ;
+//  tx_buffer[3] = OCR_READ;
+//  error[3] = HAL_SPI_TransmitReceive(&hspi1, tx_buffer, rx_buffer + 15, 5, 100);
 
 
-
+  //
   //HAL_ADCEx_Calibration_Start(&hadc1);
   HAL_ADC_Start_DMA(&hadc1, adc_buffer, ADC_BUF_SIZE);
 
@@ -189,6 +208,8 @@ error[2]=HAL_SPI_TransmitReceive(&hspi1, tx_buffer, rx_buffer+10, 5, 100);
 //
 //	  }
 	  HAL_Delay(100);
+
+
 	  HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
 	  adc_ready = 0;
 	  fuse1_is = __HAL_ADC_CALC_DATA_TO_VOLTAGE(__VREFANALOG_VOLTAGE__, adc_buffer[0], ADC_RESOLUTION12b);
