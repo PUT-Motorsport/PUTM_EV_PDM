@@ -9,4 +9,5 @@
   (lib (name "proper_8pin")(type "KiCad")(uri "${KIPRJMOD}/hardware/proper_8pin")(options "")(descr ""))
   (lib (name "inductor6_3")(type "KiCad")(uri "${KIPRJMOD}/hardware/inductor6_3")(options "")(descr ""))
   (lib (name "logos")(type "KiCad")(uri "${KIPRJMOD}/logos")(options "")(descr ""))
+  (lib (name "LIB_3568")(type "KiCad")(uri "${KIPRJMOD}/hardware/LIB_3568")(options "")(descr ""))
 )

@@ -63,8 +63,14 @@
       39,
       40
     ],
-    "visible_layers": "fffffff_80000007",
+    "visible_layers": "fffffef_80000004",
     "zone_display_mode": 0
+  },
+  "git": {
+    "repo_password": "",
+    "repo_type": "",
+    "repo_username": "",
+    "ssh_key": ""
   },
   "meta": {
     "filename": "PDM_1.kicad_prl",
