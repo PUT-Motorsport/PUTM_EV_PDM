@@ -65,6 +65,8 @@ void Error_Handler(void);
 #define FUSE3_GPIO_Port GPIOA
 #define FUSE4_Pin GPIO_PIN_3
 #define FUSE4_GPIO_Port GPIOA
+#define SPI1_SS_Pin GPIO_PIN_4
+#define SPI1_SS_GPIO_Port GPIOA
 
 /* USER CODE BEGIN Private defines */
 
