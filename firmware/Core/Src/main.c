@@ -159,6 +159,7 @@ int main(void)
   while (1)
   {
 	  HAL_Delay(10);
+	  HAL_GPIO_TogglePin(GPIOA, GPIO_Pin_9);
 	  tx_buffer[0] = OUT_READ;
 	  tx_buffer[1] = OUT_READ;
 	  tx_buffer[2] = OUT_READ;
@@ -167,10 +168,66 @@ int main(void)
 	  HAL_SPI_TransmitReceive(&hspi1, tx_buffer, rx_buffer, 4, 100);
 	  HAL_GPIO_WritePin(SPI1_SS_GPIO_Port, SPI1_SS_Pin, GPIO_PIN_SET);
 
-	  fuse1_is = __HAL_ADC_CALC_DATA_TO_VOLTAGE(__VREFANALOG_VOLTAGE__,adc_buffer[0], ADC_RESOLUTION12b);
-	  fuse2_is = __HAL_ADC_CALC_DATA_TO_VOLTAGE(__VREFANALOG_VOLTAGE__,adc_buffer[1], ADC_RESOLUTION12b);
-	  fuse3_is = __HAL_ADC_CALC_DATA_TO_VOLTAGE(__VREFANALOG_VOLTAGE__,adc_buffer[2], ADC_RESOLUTION12b);
-	  fuse4_is = __HAL_ADC_CALC_DATA_TO_VOLTAGE(__VREFANALOG_VOLTAGE__,adc_buffer[3], ADC_RESOLUTION12b);
+	  // set channel 0 - 7A
+	  tx_buffer[0] = DCR_CHANNEL0;
+	  tx_buffer[1] = DCR_CHANNEL0;
+	  tx_buffer[2] = DCR_CHANNEL0;
+	  tx_buffer[3] = DCR_CHANNEL0;
+	  HAL_GPIO_WritePin(SPI1_SS_GPIO_Port, SPI1_SS_Pin, GPIO_PIN_RESET);
+	  HAL_SPI_TransmitReceive(&hspi1, tx_buffer, rx_buffer, 4, 100);
+	  HAL_GPIO_WritePin(SPI1_SS_GPIO_Port, SPI1_SS_Pin, GPIO_PIN_SET);
+	  // check current on channel 0 - 7A
+	  fuse1_is_channel0 = __HAL_ADC_CALC_DATA_TO_VOLTAGE(__VREFANALOG_VOLTAGE__,adc_buffer[0], ADC_RESOLUTION12b);
+	  fuse2_is_channel0 = __HAL_ADC_CALC_DATA_TO_VOLTAGE(__VREFANALOG_VOLTAGE__,adc_buffer[1], ADC_RESOLUTION12b);
+	  fuse3_is_channel0 = __HAL_ADC_CALC_DATA_TO_VOLTAGE(__VREFANALOG_VOLTAGE__,adc_buffer[2], ADC_RESOLUTION12b);
+	  fuse4_is_channel0 = __HAL_ADC_CALC_DATA_TO_VOLTAGE(__VREFANALOG_VOLTAGE__,adc_buffer[3], ADC_RESOLUTION12b);
+
+
+	  // set channel 1 - 4A
+	  tx_buffer[0] = DCR_CHANNEL1;
+	  tx_buffer[1] = DCR_CHANNEL1;
+	  tx_buffer[2] = DCR_CHANNEL1;
+	  tx_buffer[3] = DCR_CHANNEL1;
+	  HAL_GPIO_WritePin(SPI1_SS_GPIO_Port, SPI1_SS_Pin, GPIO_PIN_RESET);
+	  HAL_SPI_TransmitReceive(&hspi1, tx_buffer, rx_buffer, 4, 100);
+	  HAL_GPIO_WritePin(SPI1_SS_GPIO_Port, SPI1_SS_Pin, GPIO_PIN_SET);
+	  // check current on channel 1 - 4A
+	  fuse1_is_channel1 = __HAL_ADC_CALC_DATA_TO_VOLTAGE(__VREFANALOG_VOLTAGE__,adc_buffer[1], ADC_RESOLUTION12b);
+	  fuse2_is_channel1 = __HAL_ADC_CALC_DATA_TO_VOLTAGE(__VREFANALOG_VOLTAGE__,adc_buffer[1], ADC_RESOLUTION12b);
+	  fuse3_is_channel1 = __HAL_ADC_CALC_DATA_TO_VOLTAGE(__VREFANALOG_VOLTAGE__,adc_buffer[2], ADC_RESOLUTION12b);
+	  fuse4_is_channel1 = __HAL_ADC_CALC_DATA_TO_VOLTAGE(__VREFANALOG_VOLTAGE__,adc_buffer[3], ADC_RESOLUTION12b);
+
+
+	  // set channel 2 - 4A
+	  tx_buffer[0] = DCR_CHANNEL2;
+	  tx_buffer[1] = DCR_CHANNEL2;
+	  tx_buffer[2] = DCR_CHANNEL2;
+	  tx_buffer[3] = DCR_CHANNEL2;
+	  HAL_GPIO_WritePin(SPI1_SS_GPIO_Port, SPI1_SS_Pin, GPIO_PIN_RESET);
+	  HAL_SPI_TransmitReceive(&hspi1, tx_buffer, rx_buffer, 4, 100);
+	  HAL_GPIO_WritePin(SPI1_SS_GPIO_Port, SPI1_SS_Pin, GPIO_PIN_SET);
+	  // check current on channel 2 - 4A
+	  fuse1_is_channel2 = __HAL_ADC_CALC_DATA_TO_VOLTAGE(__VREFANALOG_VOLTAGE__,adc_buffer[2], ADC_RESOLUTION12b);
+	  fuse2_is_channel2 = __HAL_ADC_CALC_DATA_TO_VOLTAGE(__VREFANALOG_VOLTAGE__,adc_buffer[1], ADC_RESOLUTION12b);
+	  fuse3_is_channel2 = __HAL_ADC_CALC_DATA_TO_VOLTAGE(__VREFANALOG_VOLTAGE__,adc_buffer[2], ADC_RESOLUTION12b);
+	  fuse4_is_channel2 = __HAL_ADC_CALC_DATA_TO_VOLTAGE(__VREFANALOG_VOLTAGE__,adc_buffer[3], ADC_RESOLUTION12b);
+
+
+	  // set channel 3 - 7A
+	  tx_buffer[0] = DCR_CHANNEL3;
+	  tx_buffer[1] = DCR_CHANNEL3;
+	  tx_buffer[2] = DCR_CHANNEL3;
+	  tx_buffer[3] = DCR_CHANNEL3;
+	  HAL_GPIO_WritePin(SPI1_SS_GPIO_Port, SPI1_SS_Pin, GPIO_PIN_RESET);
+	  HAL_SPI_TransmitReceive(&hspi1, tx_buffer, rx_buffer, 4, 100);
+	  HAL_GPIO_WritePin(SPI1_SS_GPIO_Port, SPI1_SS_Pin, GPIO_PIN_SET);
+	  // check current on channel 3 - 7A
+	  fuse1_is_channel3 = __HAL_ADC_CALC_DATA_TO_VOLTAGE(__VREFANALOG_VOLTAGE__,adc_buffer[2], ADC_RESOLUTION12b);
+	  fuse2_is_channel3 = __HAL_ADC_CALC_DATA_TO_VOLTAGE(__VREFANALOG_VOLTAGE__,adc_buffer[1], ADC_RESOLUTION12b);
+	  fuse3_is_channel3 = __HAL_ADC_CALC_DATA_TO_VOLTAGE(__VREFANALOG_VOLTAGE__,adc_buffer[2], ADC_RESOLUTION12b);
+	  fuse4_is_channel3 = __HAL_ADC_CALC_DATA_TO_VOLTAGE(__VREFANALOG_VOLTAGE__,adc_buffer[3], ADC_RESOLUTION12b);
+
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
