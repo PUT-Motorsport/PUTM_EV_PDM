@@ -67,6 +67,20 @@ void Error_Handler(void);
 #define FUSE4_GPIO_Port GPIOA
 #define SPI1_SS_Pin GPIO_PIN_4
 #define SPI1_SS_GPIO_Port GPIOA
+#define LHI_3_Pin GPIO_PIN_0
+#define LHI_3_GPIO_Port GPIOB
+#define LHI_4_Pin GPIO_PIN_1
+#define LHI_4_GPIO_Port GPIOB
+#define LED3_Pin GPIO_PIN_15
+#define LED3_GPIO_Port GPIOB
+#define LED2_Pin GPIO_PIN_8
+#define LED2_GPIO_Port GPIOA
+#define LED1_Pin GPIO_PIN_9
+#define LED1_GPIO_Port GPIOA
+#define LHI_1_Pin GPIO_PIN_2
+#define LHI_1_GPIO_Port GPIOD
+#define LHI_2_Pin GPIO_PIN_3
+#define LHI_2_GPIO_Port GPIOD
 
 /* USER CODE BEGIN Private defines */
 
