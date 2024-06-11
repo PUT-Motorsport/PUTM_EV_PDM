@@ -177,7 +177,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  HAL_Delay(100);
+
 	  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_9);
 	  // set channel 0 - 7A // value fuse = 0,2244*current + 93 // 1215 - 5A
 	  tx_buffer[0] = DCR_CHANNEL0;
@@ -247,7 +247,45 @@ int main(void)
 	  fuse2_is_channel3 = __HAL_ADC_CALC_DATA_TO_VOLTAGE(__VREFANALOG_VOLTAGE__,adc_buffer[1], ADC_RESOLUTION12b);
 	  fuse3_is_channel3 = __HAL_ADC_CALC_DATA_TO_VOLTAGE(__VREFANALOG_VOLTAGE__,adc_buffer[2], ADC_RESOLUTION12b);
 	  fuse4_is_channel3 = __HAL_ADC_CALC_DATA_TO_VOLTAGE(__VREFANALOG_VOLTAGE__,adc_buffer[3], ADC_RESOLUTION12b);
+	  HAL_Delay(100);
+	  if (fuse2_is_channel0 > 1215  && after_first_loop) {
 
+	 	  tx_buffer[0] = OUT_CLOSE;
+	 	  tx_buffer[1] = OUT_CLOSE;
+	 	  tx_buffer[2] = OUT_CLOSE;
+	 	  tx_buffer[3] = OUT_CLOSE;
+	 	  HAL_GPIO_WritePin(SPI1_SS_GPIO_Port, SPI1_SS_Pin, GPIO_PIN_RESET);
+	 	  HAL_SPI_TransmitReceive(&hspi1, tx_buffer, rx_buffer, 4, 100);
+	 	  HAL_GPIO_WritePin(SPI1_SS_GPIO_Port, SPI1_SS_Pin, GPIO_PIN_SET);
+	 	}
+
+//	  if (fuse1_is_channel0 > 1215 || fuse2_is_channel0 > 1215 || fuse2_is_channel0 > 1215|| fuse2_is_channel0 > 1215 ||
+//		  fuse1_is_channel3 > 1215 || fuse2_is_channel3 > 1215 || fuse2_is_channel3 > 1215|| fuse2_is_channel3 > 1215 || && after_first_loop)
+//	  {
+//
+//		  tx_buffer[0] = OUT_CLOSE;
+//		  tx_buffer[1] = OUT_CLOSE;
+//		  tx_buffer[2] = OUT_CLOSE;
+//		  tx_buffer[3] = OUT_CLOSE;
+//		  HAL_GPIO_WritePin(SPI1_SS_GPIO_Port, SPI1_SS_Pin, GPIO_PIN_RESET);
+//		  HAL_SPI_TransmitReceive(&hspi1, tx_buffer, rx_buffer, 4, 100);
+//		  HAL_GPIO_WritePin(SPI1_SS_GPIO_Port, SPI1_SS_Pin, GPIO_PIN_SET);
+//
+//	  }
+//	  if (fuse1_is_channe1 > 990 || fuse2_is_channel1 > 990 || fuse2_is_channel1 > 990|| fuse2_is_channel1 > 990 ||
+//		  fuse1_is_channe2 > 990 || fuse2_is_channel2 > 990 || fuse2_is_channel2 > 990|| fuse2_is_channel2 > 990 || && after_first_loop)
+//	  	  {
+//
+//	  		  tx_buffer[0] = OUT_CLOSE;
+//	  		  tx_buffer[1] = OUT_CLOSE;
+//	  		  tx_buffer[2] = OUT_CLOSE;
+//	  		  tx_buffer[3] = OUT_CLOSE;
+//	  		  HAL_GPIO_WritePin(SPI1_SS_GPIO_Port, SPI1_SS_Pin, GPIO_PIN_RESET);
+//	  		  HAL_SPI_TransmitReceive(&hspi1, tx_buffer, rx_buffer, 4, 100);
+//	  		  HAL_GPIO_WritePin(SPI1_SS_GPIO_Port, SPI1_SS_Pin, GPIO_PIN_SET);
+//
+//	  	  }
+	 	  after_first_loop = 1;
 
     /* USER CODE END WHILE */
 
