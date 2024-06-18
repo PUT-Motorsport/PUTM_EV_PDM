@@ -259,8 +259,8 @@ int main(void)
 //	 	  HAL_GPIO_WritePin(SPI1_SS_GPIO_Port, SPI1_SS_Pin, GPIO_PIN_SET);
 //	 	}
 
-	  if (fuse1_is_channel0 > 1215 || fuse2_is_channel0 > 1215 || fuse2_is_channel0 > 1215|| fuse2_is_channel0 > 1215 ||
-		  fuse1_is_channel3 > 1215 || fuse2_is_channel3 > 1215 || fuse2_is_channel3 > 1215|| fuse2_is_channel3 > 1215  && after_first_loop)
+	  if (fuse1_is_channel0 > 1180 || fuse2_is_channel0 > 1180 || fuse3_is_channel0 > 1180|| fuse4_is_channel0 > 1180 ||
+		  fuse1_is_channel3 > 1180 || fuse2_is_channel3 > 1180 || fuse3_is_channel3 > 1180|| fuse4_is_channel3 > 1180  && after_first_loop)
 	  {
 
 		  tx_buffer[0] = OUT_CLOSE;
@@ -270,10 +270,11 @@ int main(void)
 		  HAL_GPIO_WritePin(SPI1_SS_GPIO_Port, SPI1_SS_Pin, GPIO_PIN_RESET);
 		  HAL_SPI_TransmitReceive(&hspi1, tx_buffer, rx_buffer, 4, 100);
 		  HAL_GPIO_WritePin(SPI1_SS_GPIO_Port, SPI1_SS_Pin, GPIO_PIN_SET);
+		  HAL_Delay(1000);
 
 	  }
-	  if (fuse1_is_channel1 > 990 || fuse2_is_channel1 > 990 || fuse2_is_channel1 > 990|| fuse2_is_channel1 > 990 ||
-		  fuse1_is_channel2 > 990 || fuse2_is_channel2 > 990 || fuse2_is_channel2 > 990|| fuse2_is_channel2 > 990  && after_first_loop)
+	  if (fuse1_is_channel1 > 990 || fuse2_is_channel1 > 990 || fuse3_is_channel1 > 990|| fuse4_is_channel1 > 990 ||
+		  fuse1_is_channel2 > 990 || fuse2_is_channel2 > 990 || fuse3_is_channel2 > 990|| fuse4_is_channel2 > 990  && after_first_loop)
 	  	  {
 
 	  		  tx_buffer[0] = OUT_CLOSE;
@@ -283,6 +284,7 @@ int main(void)
 	  		  HAL_GPIO_WritePin(SPI1_SS_GPIO_Port, SPI1_SS_Pin, GPIO_PIN_RESET);
 	  		  HAL_SPI_TransmitReceive(&hspi1, tx_buffer, rx_buffer, 4, 100);
 	  		  HAL_GPIO_WritePin(SPI1_SS_GPIO_Port, SPI1_SS_Pin, GPIO_PIN_SET);
+	  		HAL_Delay(1000);
 
 	  	  }
 	 	  after_first_loop = 1;
